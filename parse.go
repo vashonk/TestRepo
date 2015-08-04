@@ -45,7 +45,7 @@ func RelScrape(url string) {
     itemtype, _ := s.Attr("itemtype")
     fmt.Printf("Schema: %s\r\n", itemtype)
 
-    //hack!
+    //hack! need to find a better way
     a := s.Find("a").First()
     href, _ := a.Attr("href")
     fmt.Printf("\thref %s\r\n", href)
